@@ -1,6 +1,6 @@
 <!-- Section -->
 <section class="content">
-        <?php foreach ($pages as $page): ?>
+        <?php foreach ($content as $page): ?>
                 <article class="page">
                         <?php Theme::plugins('pageBegin') ?>
                         <header>

@@ -14,8 +14,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<h1 class="intro-lead"><a class="home-title" href="<?php echo $Site->url() ?>"><?php echo $Site->title() ?></a></h1>
-						<p class=""><?php echo $Site->description() ?></p>
+						<h1 class="intro-lead"><a class="home-title" href="<?php echo $site->url() ?>"><?php echo $site->title() ?></a></h1>
+						<p class=""><?php echo $site->description() ?></p>
 					</div>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 text-center">
-					<p><?php echo $Site->footer() ?><br>Powered by <a href="https://www.bludit.com" target="_blank">BLUDIT</a></p>
+					<p><?php echo $site->footer() ?><br>Powered by <a href="https://www.bludit.com" target="_blank">BLUDIT</a></p>
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 # Kernel Panic theme for Bludit
 
 ## Compatible
-- Bludit v2.x
+- Bludit v3.x
 
 ## Author
 - Diego

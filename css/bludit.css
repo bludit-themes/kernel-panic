@@ -53,6 +53,11 @@ article.page header h2 {
 	font-size: 2.4em;
 }
 
+article.page header p.description {
+	margin-top: -10px;
+	color: #a9a9a9;
+}
+
 article.page footer {
 	text-align: right;
 }

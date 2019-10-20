@@ -6,7 +6,9 @@
                                 <a href="<?php echo $page->permalink() ?>">
                                         <h2><?php echo $page->title() ?></h2>
                                 </a>
-
+				<?php if ($page->description()): ?>
+					<p class="description"><?php echo $page->description() ?></p>
+				<?php endif ?>
                                 <?php if( $page->coverImage() ) { ?>
                                         <img src="<?php echo $page->coverImage() ?>" alt="<?php echo $page->slug() ?>">
                                 <?php } ?>

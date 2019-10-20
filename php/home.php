@@ -7,7 +7,9 @@
                                 <a href="<?php echo $page->permalink() ?>">
                                         <h2><?php echo $page->title() ?></h2>
                                 </a>
-
+				<?php if ($page->description()): ?>
+					<p class="description"><?php echo $page->description() ?></p>
+				<?php endif ?>
                                 <?php if( $page->coverImage() ) { ?>
                                         <img src="<?php echo $page->coverImage() ?>" alt="<?php echo $page->slug() ?>">
                                 <?php } ?>
@@ -17,7 +19,7 @@
                                 <?php if ($page->readMore() ) { ?>
                                 <div class="readmore">
                                         <a href="<?php echo $page->permalink() ?>">
-                                                <i class="icon-arrow-down"></i> <?php echo $Language->get('Read more') ?>
+                                                <i class="icon-arrow-down"></i> <?php echo $language->get('Read more') ?>
                                         </a>
                                 </div>
                                 <?php } ?>
@@ -31,10 +33,10 @@
 <ul class="pagination">
 <?php
 if (Paginator::showPrev()) {
-        echo '<li><a href="'.Paginator::prevPageUrl().'">'.$L->get('Previous page').'</a></li>';
+        echo '<li><a href="'.Paginator::prevPageUrl().'">'.$language->get('Previous page').'</a></li>';
 }
 if (Paginator::showNext()) {
-        echo '<li><a href="'.Paginator::nextPageUrl().'" class="float-right">'.$L->get('Next page').'</a></li>';
+        echo '<li><a href="'.Paginator::nextPageUrl().'" class="float-right">'.$language->get('Next page').'</a></li>';
 }
 ?>
 </ul>

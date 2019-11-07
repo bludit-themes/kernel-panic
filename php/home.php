@@ -33,10 +33,10 @@
 <ul class="pagination">
 <?php
 if (Paginator::showPrev()) {
-        echo '<li><a href="'.Paginator::prevPageUrl().'">'.$language->get('Previous page').'</a></li>';
+        echo '<li><a href="'.Paginator::previousPageUrl().'" class="float-right">'.$language->get('Next page').'</a></li>';
 }
 if (Paginator::showNext()) {
-        echo '<li><a href="'.Paginator::nextPageUrl().'" class="float-right">'.$language->get('Next page').'</a></li>';
+        echo '<li><a href="'.Paginator::nextPageUrl().'">'.$language->get('Previous page').'</a></li>';
 }
 ?>
 </ul>
